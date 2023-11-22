@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		776837052B0DE2D80089B4A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776837042B0DE2D80089B4A5 /* AppDelegate.swift */; };
+		776837072B0DE2D80089B4A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776837062B0DE2D80089B4A5 /* SceneDelegate.swift */; };
+		776837092B0DE2D80089B4A5 /* SplashScreenCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776837082B0DE2D80089B4A5 /* SplashScreenCotroller.swift */; };
+		7768370E2B0DE2D90089B4A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7768370D2B0DE2D90089B4A5 /* Assets.xcassets */; };
+		776837112B0DE2D90089B4A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7768370F2B0DE2D90089B4A5 /* LaunchScreen.storyboard */; };
+		7768371B2B0DE5AA0089B4A5 /* Extention+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768371A2B0DE5AA0089B4A5 /* Extention+UIColor.swift */; };
+		776837202B0DF3640089B4A5 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768371F2B0DF3640089B4A5 /* SplashView.swift */; };
+		776837282B0E059B0089B4A5 /* GothamPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 776837232B0E059B0089B4A5 /* GothamPro.ttf */; };
+		776837292B0E059B0089B4A5 /* GothamPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 776837242B0E059B0089B4A5 /* GothamPro-Bold.ttf */; };
+		7768372A2B0E059B0089B4A5 /* GothamPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 776837252B0E059B0089B4A5 /* GothamPro-Light.ttf */; };
+		7768372C2B0E059B0089B4A5 /* GothamPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 776837272B0E059B0089B4A5 /* GothamPro-Medium.ttf */; };
+		7768372F2B0E14B20089B4A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768372E2B0E14B20089B4A5 /* LoginViewController.swift */; };
+		776837332B0E160F0089B4A5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776837322B0E160F0089B4A5 /* LoginView.swift */; };
+		7FB77535B46937B16590B927 /* libPods-Neobis_iOS_Auth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46435044236D7C86A64186AF /* libPods-Neobis_iOS_Auth.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46435044236D7C86A64186AF /* libPods-Neobis_iOS_Auth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Neobis_iOS_Auth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		776837012B0DE2D80089B4A5 /* Neobis_iOS_Auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_Auth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		776837042B0DE2D80089B4A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		776837062B0DE2D80089B4A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		776837082B0DE2D80089B4A5 /* SplashScreenCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenCotroller.swift; sourceTree = "<group>"; };
+		7768370D2B0DE2D90089B4A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		776837102B0DE2D90089B4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		776837122B0DE2D90089B4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7768371A2B0DE5AA0089B4A5 /* Extention+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+UIColor.swift"; sourceTree = "<group>"; };
+		7768371F2B0DF3640089B4A5 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		776837232B0E059B0089B4A5 /* GothamPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamPro.ttf; sourceTree = "<group>"; };
+		776837242B0E059B0089B4A5 /* GothamPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Bold.ttf"; sourceTree = "<group>"; };
+		776837252B0E059B0089B4A5 /* GothamPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Light.ttf"; sourceTree = "<group>"; };
+		776837272B0E059B0089B4A5 /* GothamPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Medium.ttf"; sourceTree = "<group>"; };
+		7768372E2B0E14B20089B4A5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		776837322B0E160F0089B4A5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		855691C6931938B2BCC7159F /* Pods-Neobis_iOS_Auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_Auth.debug.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_Auth/Pods-Neobis_iOS_Auth.debug.xcconfig"; sourceTree = "<group>"; };
+		954F1385BF55199BE239C97B /* Pods-Neobis_iOS_Auth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_Auth.release.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_Auth/Pods-Neobis_iOS_Auth.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		776836FE2B0DE2D80089B4A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB77535B46937B16590B927 /* libPods-Neobis_iOS_Auth.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37B5AC9333AAE5017CA92FF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46435044236D7C86A64186AF /* libPods-Neobis_iOS_Auth.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5499FEDDF0C41E8DA041BE74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				855691C6931938B2BCC7159F /* Pods-Neobis_iOS_Auth.debug.xcconfig */,
+				954F1385BF55199BE239C97B /* Pods-Neobis_iOS_Auth.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		776836F82B0DE2D80089B4A5 = {
+			isa = PBXGroup;
+			children = (
+				776837032B0DE2D80089B4A5 /* Neobis_iOS_Auth */,
+				776837022B0DE2D80089B4A5 /* Products */,
+				5499FEDDF0C41E8DA041BE74 /* Pods */,
+				37B5AC9333AAE5017CA92FF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		776837022B0DE2D80089B4A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				776837012B0DE2D80089B4A5 /* Neobis_iOS_Auth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		776837032B0DE2D80089B4A5 /* Neobis_iOS_Auth */ = {
+			isa = PBXGroup;
+			children = (
+				776837222B0E054B0089B4A5 /* Fonts */,
+				776837192B0DE5770089B4A5 /* Extention */,
+				776837182B0DE4D20089B4A5 /* Supporting */,
+				7768372D2B0E14900089B4A5 /* LoginScreen */,
+				7768371C2B0DF3190089B4A5 /* SplashScreen */,
+				7768370D2B0DE2D90089B4A5 /* Assets.xcassets */,
+				7768370F2B0DE2D90089B4A5 /* LaunchScreen.storyboard */,
+				776837122B0DE2D90089B4A5 /* Info.plist */,
+			);
+			path = Neobis_iOS_Auth;
+			sourceTree = "<group>";
+		};
+		776837182B0DE4D20089B4A5 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				776837042B0DE2D80089B4A5 /* AppDelegate.swift */,
+				776837062B0DE2D80089B4A5 /* SceneDelegate.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		776837192B0DE5770089B4A5 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				7768371A2B0DE5AA0089B4A5 /* Extention+UIColor.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		7768371C2B0DF3190089B4A5 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				776837212B0DF3980089B4A5 /* ViewController */,
+				7768371D2B0DF32E0089B4A5 /* View */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		7768371D2B0DF32E0089B4A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7768371F2B0DF3640089B4A5 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		776837212B0DF3980089B4A5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				776837082B0DE2D80089B4A5 /* SplashScreenCotroller.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		776837222B0E054B0089B4A5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				776837242B0E059B0089B4A5 /* GothamPro-Bold.ttf */,
+				776837252B0E059B0089B4A5 /* GothamPro-Light.ttf */,
+				776837272B0E059B0089B4A5 /* GothamPro-Medium.ttf */,
+				776837232B0E059B0089B4A5 /* GothamPro.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7768372D2B0E14900089B4A5 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				776837312B0E15FB0089B4A5 /* View */,
+				776837302B0E15F50089B4A5 /* ViewController */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		776837302B0E15F50089B4A5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7768372E2B0E14B20089B4A5 /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		776837312B0E15FB0089B4A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				776837322B0E160F0089B4A5 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		776837002B0DE2D80089B4A5 /* Neobis_iOS_Auth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776837152B0DE2D90089B4A5 /* Build configuration list for PBXNativeTarget "Neobis_iOS_Auth" */;
+			buildPhases = (
+				2CB574489DB7C9B065091DA2 /* [CP] Check Pods Manifest.lock */,
+				776836FD2B0DE2D80089B4A5 /* Sources */,
+				776836FE2B0DE2D80089B4A5 /* Frameworks */,
+				776836FF2B0DE2D80089B4A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Neobis_iOS_Auth;
+			productName = Neobis_iOS_Auth;
+			productReference = 776837012B0DE2D80089B4A5 /* Neobis_iOS_Auth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		776836F92B0DE2D80089B4A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					776837002B0DE2D80089B4A5 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 776836FC2B0DE2D80089B4A5 /* Build configuration list for PBXProject "Neobis_iOS_Auth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 776836F82B0DE2D80089B4A5;
+			productRefGroup = 776837022B0DE2D80089B4A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				776837002B0DE2D80089B4A5 /* Neobis_iOS_Auth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		776836FF2B0DE2D80089B4A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776837112B0DE2D90089B4A5 /* LaunchScreen.storyboard in Resources */,
+				776837292B0E059B0089B4A5 /* GothamPro-Bold.ttf in Resources */,
+				7768372A2B0E059B0089B4A5 /* GothamPro-Light.ttf in Resources */,
+				7768370E2B0DE2D90089B4A5 /* Assets.xcassets in Resources */,
+				776837282B0E059B0089B4A5 /* GothamPro.ttf in Resources */,
+				7768372C2B0E059B0089B4A5 /* GothamPro-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CB574489DB7C9B065091DA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Neobis_iOS_Auth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		776836FD2B0DE2D80089B4A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7768372F2B0E14B20089B4A5 /* LoginViewController.swift in Sources */,
+				776837332B0E160F0089B4A5 /* LoginView.swift in Sources */,
+				7768371B2B0DE5AA0089B4A5 /* Extention+UIColor.swift in Sources */,
+				776837092B0DE2D80089B4A5 /* SplashScreenCotroller.swift in Sources */,
+				776837202B0DF3640089B4A5 /* SplashView.swift in Sources */,
+				776837052B0DE2D80089B4A5 /* AppDelegate.swift in Sources */,
+				776837072B0DE2D80089B4A5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7768370F2B0DE2D90089B4A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				776837102B0DE2D90089B4A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		776837132B0DE2D90089B4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		776837142B0DE2D90089B4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		776837162B0DE2D90089B4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 855691C6931938B2BCC7159F /* Pods-Neobis_iOS_Auth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RPXJGA4ZYB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Neobis_iOS_Auth/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alikhan.Neobis-iOS-Auth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		776837172B0DE2D90089B4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 954F1385BF55199BE239C97B /* Pods-Neobis_iOS_Auth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RPXJGA4ZYB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Neobis_iOS_Auth/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alikhan.Neobis-iOS-Auth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		776836FC2B0DE2D80089B4A5 /* Build configuration list for PBXProject "Neobis_iOS_Auth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776837132B0DE2D90089B4A5 /* Debug */,
+				776837142B0DE2D90089B4A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776837152B0DE2D90089B4A5 /* Build configuration list for PBXNativeTarget "Neobis_iOS_Auth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776837162B0DE2D90089B4A5 /* Debug */,
+				776837172B0DE2D90089B4A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 776836F92B0DE2D80089B4A5 /* Project object */;
+}

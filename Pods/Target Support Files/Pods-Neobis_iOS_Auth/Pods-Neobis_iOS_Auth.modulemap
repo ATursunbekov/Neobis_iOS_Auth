@@ -1,0 +1,6 @@
+module Pods_Neobis_iOS_Auth {
+  umbrella header "Pods-Neobis_iOS_Auth-umbrella.h"
+
+  export *
+  module * { export * }
+}
