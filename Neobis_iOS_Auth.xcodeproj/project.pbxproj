@@ -20,6 +20,7 @@
 		7768372C2B0E059B0089B4A5 /* GothamPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 776837272B0E059B0089B4A5 /* GothamPro-Medium.ttf */; };
 		7768372F2B0E14B20089B4A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768372E2B0E14B20089B4A5 /* LoginViewController.swift */; };
 		776837332B0E160F0089B4A5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776837322B0E160F0089B4A5 /* LoginView.swift */; };
+		77B10B722B10867C00A9AF7F /* FloatingPlaceholderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B10B712B10867C00A9AF7F /* FloatingPlaceholderTextField.swift */; };
 		7FB77535B46937B16590B927 /* libPods-Neobis_iOS_Auth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46435044236D7C86A64186AF /* libPods-Neobis_iOS_Auth.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		776837272B0E059B0089B4A5 /* GothamPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Medium.ttf"; sourceTree = "<group>"; };
 		7768372E2B0E14B20089B4A5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		776837322B0E160F0089B4A5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		77B10B712B10867C00A9AF7F /* FloatingPlaceholderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPlaceholderTextField.swift; sourceTree = "<group>"; };
 		855691C6931938B2BCC7159F /* Pods-Neobis_iOS_Auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_Auth.debug.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_Auth/Pods-Neobis_iOS_Auth.debug.xcconfig"; sourceTree = "<group>"; };
 		954F1385BF55199BE239C97B /* Pods-Neobis_iOS_Auth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_Auth.release.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_Auth/Pods-Neobis_iOS_Auth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +96,7 @@
 		776837032B0DE2D80089B4A5 /* Neobis_iOS_Auth */ = {
 			isa = PBXGroup;
 			children = (
+				77B10B702B10866500A9AF7F /* CustomView */,
 				776837222B0E054B0089B4A5 /* Fonts */,
 				776837192B0DE5770089B4A5 /* Extention */,
 				776837182B0DE4D20089B4A5 /* Supporting */,
@@ -182,6 +185,14 @@
 				776837322B0E160F0089B4A5 /* LoginView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		77B10B702B10866500A9AF7F /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				77B10B712B10867C00A9AF7F /* FloatingPlaceholderTextField.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				7768371B2B0DE5AA0089B4A5 /* Extention+UIColor.swift in Sources */,
 				776837092B0DE2D80089B4A5 /* SplashScreenCotroller.swift in Sources */,
 				776837202B0DF3640089B4A5 /* SplashView.swift in Sources */,
+				77B10B722B10867C00A9AF7F /* FloatingPlaceholderTextField.swift in Sources */,
 				776837052B0DE2D80089B4A5 /* AppDelegate.swift in Sources */,
 				776837072B0DE2D80089B4A5 /* SceneDelegate.swift in Sources */,
 			);
