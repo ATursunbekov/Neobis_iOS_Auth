@@ -16,6 +16,40 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(loginView)
+        setupTargets()
+    }
+    
+    func changeStateOfEnterButton(state: Bool) {
+        loginView.enterButton.backgroundColor = !state ? UIColor(hex: "#F7F7F8") : UIColor(hex: "#5D5FEF")
+        loginView.enterButton.isEnabled = state
+    }
+    
+    func incorrectData(correct: Bool) {
+        if !correct {
+            loginView.loginTextField.textColor = .systemRed
+            loginView.loginView.layer.borderColor = UIColor.systemRed.cgColor
+            loginView.passwordView.layer.borderColor = UIColor.systemRed.cgColor
+            loginView.passwordTextField.textColor = .systemRed
+            loginView.hidingPassword.tintColor = .systemRed
+            validData = false
+            loginView.invalidDataLabel.isHidden = false
+        } else {
+            loginView.loginTextField.textColor = UIColor(hex: "#C1C1C1")
+            loginView.layer.borderColor = UIColor(hex: "#F5F5F5").cgColor
+            loginView.passwordView.layer.borderColor = UIColor(hex: "#F5F5F5").cgColor
+            loginView.passwordTextField.textColor = UIColor(hex: "#C1C1C1")
+            validData = true
+            loginView.hidingPassword.tintColor = loginView.passwordTextField.isSecureTextEntry ? .gray : .black
+            loginView.invalidDataLabel.isHidden = true
+        }
+    }
+    
+    func setupTargets() {
+        loginView.hidingPassword.addTarget(self, action: #selector(showPassword), for: .touchUpInside)
+        loginView.passwordTextField.addTarget(self, action: #selector(passwordEditing), for: .editingChanged)
+        loginView.loginTextField.addTarget(self, action: #selector(passwordEditing), for: .editingChanged)
+        loginView.enterButton.addTarget(self, action: #selector(enterPressed), for: .touchUpInside)
+        loginView.forgotPasswordButton.addTarget(self, action: #selector(resetPasswordPressed), for: .touchUpInside)
     }
     
     @objc func showPassword() {
@@ -59,35 +93,9 @@ class LoginViewController: UIViewController {
         incorrectData(correct: false)
     }
     
-    func changeStateOfEnterButton(state: Bool) {
-        loginView.enterButton.backgroundColor = !state ? UIColor(hex: "#F7F7F8") : UIColor(hex: "#5D5FEF")
-        loginView.enterButton.isEnabled = state
-    }
-    
-    func incorrectData(correct: Bool) {
-        if !correct {
-            loginView.loginTextField.textColor = .systemRed
-            loginView.loginView.layer.borderColor = UIColor.systemRed.cgColor
-            loginView.passwordView.layer.borderColor = UIColor.systemRed.cgColor
-            loginView.passwordTextField.textColor = .systemRed
-            loginView.hidingPassword.tintColor = .systemRed
-            validData = false
-            loginView.invalidDataLabel.isHidden = false
-        } else {
-            loginView.loginTextField.textColor = UIColor(hex: "#C1C1C1")
-            loginView.layer.borderColor = UIColor(hex: "#F5F5F5").cgColor
-            loginView.passwordView.layer.borderColor = UIColor(hex: "#F5F5F5").cgColor
-            loginView.passwordTextField.textColor = UIColor(hex: "#C1C1C1")
-            validData = true
-            loginView.hidingPassword.tintColor = loginView.passwordTextField.isSecureTextEntry ? .gray : .black
-            loginView.invalidDataLabel.isHidden = true
-        }
-    }
-    
-    func setupTargets() {
-        loginView.hidingPassword.addTarget(self, action: #selector(showPassword), for: .touchUpInside)
-        loginView.passwordTextField.addTarget(self, action: #selector(passwordEditing), for: .editingChanged)
-        loginView.loginTextField.addTarget(self, action: #selector(passwordEditing), for: .editingChanged)
-        loginView.enterButton.addTarget(self, action: #selector(enterPressed), for: .touchUpInside)
+    @objc func resetPasswordPressed() {
+        let vc = UINavigationController(rootViewController: ResetPasswordViewController())
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
 }
