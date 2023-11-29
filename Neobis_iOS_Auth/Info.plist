@@ -4,10 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>GothamPro-Medium.ttf</string>
-		<string>GothamPro-Bold.ttf</string>
-		<string>GothamPro-Light.ttf</string>
-		<string>GothamPro.ttf</string>
+		<string>MPLUS1p-Regular.ttf</string>
+		<string>MPLUS1p-Medium.ttf</string>
+		<string>MPLUS1p-Bold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

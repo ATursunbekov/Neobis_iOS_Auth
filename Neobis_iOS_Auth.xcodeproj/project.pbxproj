@@ -9,20 +9,18 @@
 /* Begin PBXBuildFile section */
 		776837052B0DE2D80089B4A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776837042B0DE2D80089B4A5 /* AppDelegate.swift */; };
 		776837072B0DE2D80089B4A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776837062B0DE2D80089B4A5 /* SceneDelegate.swift */; };
-		776837092B0DE2D80089B4A5 /* SplashScreenCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776837082B0DE2D80089B4A5 /* SplashScreenCotroller.swift */; };
 		7768370E2B0DE2D90089B4A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7768370D2B0DE2D90089B4A5 /* Assets.xcassets */; };
 		776837112B0DE2D90089B4A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7768370F2B0DE2D90089B4A5 /* LaunchScreen.storyboard */; };
 		7768371B2B0DE5AA0089B4A5 /* Extention+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768371A2B0DE5AA0089B4A5 /* Extention+UIColor.swift */; };
-		776837202B0DF3640089B4A5 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768371F2B0DF3640089B4A5 /* SplashView.swift */; };
-		776837282B0E059B0089B4A5 /* GothamPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 776837232B0E059B0089B4A5 /* GothamPro.ttf */; };
-		776837292B0E059B0089B4A5 /* GothamPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 776837242B0E059B0089B4A5 /* GothamPro-Bold.ttf */; };
-		7768372A2B0E059B0089B4A5 /* GothamPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 776837252B0E059B0089B4A5 /* GothamPro-Light.ttf */; };
-		7768372C2B0E059B0089B4A5 /* GothamPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 776837272B0E059B0089B4A5 /* GothamPro-Medium.ttf */; };
-		7768372F2B0E14B20089B4A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768372E2B0E14B20089B4A5 /* LoginViewController.swift */; };
-		776837332B0E160F0089B4A5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776837322B0E160F0089B4A5 /* LoginView.swift */; };
-		77B10B722B10867C00A9AF7F /* FloatingPlaceholderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B10B712B10867C00A9AF7F /* FloatingPlaceholderTextField.swift */; };
-		77B10B792B108CDD00A9AF7F /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B10B782B108CDD00A9AF7F /* ResetPasswordViewController.swift */; };
-		77B10B7B2B108D0A00A9AF7F /* ResetPasswordScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B10B7A2B108D0A00A9AF7F /* ResetPasswordScreenView.swift */; };
+		77BF96332B173C850008347A /* MPLUS1p-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77BF96302B173C850008347A /* MPLUS1p-Medium.ttf */; };
+		77BF96342B173C850008347A /* MPLUS1p-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77BF96312B173C850008347A /* MPLUS1p-Bold.ttf */; };
+		77BF96352B173C850008347A /* MPLUS1p-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77BF96322B173C850008347A /* MPLUS1p-Regular.ttf */; };
+		77BF96382B173CFE0008347A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF96372B173CFE0008347A /* LoginViewController.swift */; };
+		77BF963C2B174D940008347A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF963B2B174D940008347A /* LoginView.swift */; };
+		77BF963E2B17778C0008347A /* Extention+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF963D2B17778C0008347A /* Extention+TextField.swift */; };
+		77BF96412B1786270008347A /* CustomToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF96402B1786270008347A /* CustomToastView.swift */; };
+		77BF96462B1797CB0008347A /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF96452B1797CB0008347A /* RegistrationViewController.swift */; };
+		77BF96482B1797E90008347A /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF96472B1797E90008347A /* RegistrationView.swift */; };
 		7FB77535B46937B16590B927 /* libPods-Neobis_iOS_Auth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46435044236D7C86A64186AF /* libPods-Neobis_iOS_Auth.a */; };
 /* End PBXBuildFile section */
 
@@ -31,21 +29,19 @@
 		776837012B0DE2D80089B4A5 /* Neobis_iOS_Auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_Auth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776837042B0DE2D80089B4A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		776837062B0DE2D80089B4A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		776837082B0DE2D80089B4A5 /* SplashScreenCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenCotroller.swift; sourceTree = "<group>"; };
 		7768370D2B0DE2D90089B4A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		776837102B0DE2D90089B4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		776837122B0DE2D90089B4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7768371A2B0DE5AA0089B4A5 /* Extention+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+UIColor.swift"; sourceTree = "<group>"; };
-		7768371F2B0DF3640089B4A5 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		776837232B0E059B0089B4A5 /* GothamPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamPro.ttf; sourceTree = "<group>"; };
-		776837242B0E059B0089B4A5 /* GothamPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Bold.ttf"; sourceTree = "<group>"; };
-		776837252B0E059B0089B4A5 /* GothamPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Light.ttf"; sourceTree = "<group>"; };
-		776837272B0E059B0089B4A5 /* GothamPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Medium.ttf"; sourceTree = "<group>"; };
-		7768372E2B0E14B20089B4A5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		776837322B0E160F0089B4A5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		77B10B712B10867C00A9AF7F /* FloatingPlaceholderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPlaceholderTextField.swift; sourceTree = "<group>"; };
-		77B10B782B108CDD00A9AF7F /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		77B10B7A2B108D0A00A9AF7F /* ResetPasswordScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordScreenView.swift; sourceTree = "<group>"; };
+		77BF96302B173C850008347A /* MPLUS1p-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-Medium.ttf"; sourceTree = "<group>"; };
+		77BF96312B173C850008347A /* MPLUS1p-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-Bold.ttf"; sourceTree = "<group>"; };
+		77BF96322B173C850008347A /* MPLUS1p-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-Regular.ttf"; sourceTree = "<group>"; };
+		77BF96372B173CFE0008347A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		77BF963B2B174D940008347A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		77BF963D2B17778C0008347A /* Extention+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+TextField.swift"; sourceTree = "<group>"; };
+		77BF96402B1786270008347A /* CustomToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToastView.swift; sourceTree = "<group>"; };
+		77BF96452B1797CB0008347A /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		77BF96472B1797E90008347A /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		855691C6931938B2BCC7159F /* Pods-Neobis_iOS_Auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_Auth.debug.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_Auth/Pods-Neobis_iOS_Auth.debug.xcconfig"; sourceTree = "<group>"; };
 		954F1385BF55199BE239C97B /* Pods-Neobis_iOS_Auth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_Auth.release.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_Auth/Pods-Neobis_iOS_Auth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,122 +119,88 @@
 			isa = PBXGroup;
 			children = (
 				7768371A2B0DE5AA0089B4A5 /* Extention+UIColor.swift */,
+				77BF963D2B17778C0008347A /* Extention+TextField.swift */,
 			);
 			path = Extention;
-			sourceTree = "<group>";
-		};
-		7768371C2B0DF3190089B4A5 /* SplashScreen */ = {
-			isa = PBXGroup;
-			children = (
-				776837212B0DF3980089B4A5 /* ViewController */,
-				7768371D2B0DF32E0089B4A5 /* View */,
-			);
-			path = SplashScreen;
-			sourceTree = "<group>";
-		};
-		7768371D2B0DF32E0089B4A5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7768371F2B0DF3640089B4A5 /* SplashView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		776837212B0DF3980089B4A5 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				776837082B0DE2D80089B4A5 /* SplashScreenCotroller.swift */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		776837222B0E054B0089B4A5 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				776837242B0E059B0089B4A5 /* GothamPro-Bold.ttf */,
-				776837252B0E059B0089B4A5 /* GothamPro-Light.ttf */,
-				776837272B0E059B0089B4A5 /* GothamPro-Medium.ttf */,
-				776837232B0E059B0089B4A5 /* GothamPro.ttf */,
+				77BF96312B173C850008347A /* MPLUS1p-Bold.ttf */,
+				77BF96302B173C850008347A /* MPLUS1p-Medium.ttf */,
+				77BF96322B173C850008347A /* MPLUS1p-Regular.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		7768372D2B0E14900089B4A5 /* LoginScreen */ = {
-			isa = PBXGroup;
-			children = (
-				776837312B0E15FB0089B4A5 /* View */,
-				776837302B0E15F50089B4A5 /* ViewController */,
-			);
-			path = LoginScreen;
-			sourceTree = "<group>";
-		};
-		776837302B0E15F50089B4A5 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7768372E2B0E14B20089B4A5 /* LoginViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		776837312B0E15FB0089B4A5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				776837322B0E160F0089B4A5 /* LoginView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		77B10B702B10866500A9AF7F /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				77B10B712B10867C00A9AF7F /* FloatingPlaceholderTextField.swift */,
-			);
-			path = CustomView;
-			sourceTree = "<group>";
-		};
-		77B10B732B108C0600A9AF7F /* ResetPassword */ = {
-			isa = PBXGroup;
-			children = (
-				77B10B772B108CAF00A9AF7F /* ViewModel */,
-				77B10B762B108CAA00A9AF7F /* View */,
-				77B10B752B108C9E00A9AF7F /* ViewController */,
-			);
-			path = ResetPassword;
 			sourceTree = "<group>";
 		};
 		77B10B742B108C2C00A9AF7F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				77BF963F2B1786190008347A /* CustomViews */,
+				77BF96422B17978D0008347A /* RegistrationScreen */,
+				77BF96362B173CB90008347A /* LoginScreen */,
 				776837192B0DE5770089B4A5 /* Extention */,
-				77B10B702B10866500A9AF7F /* CustomView */,
-				7768371C2B0DF3190089B4A5 /* SplashScreen */,
-				7768372D2B0E14900089B4A5 /* LoginScreen */,
-				77B10B732B108C0600A9AF7F /* ResetPassword */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		77B10B752B108C9E00A9AF7F /* ViewController */ = {
+		77BF96362B173CB90008347A /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
-				77B10B782B108CDD00A9AF7F /* ResetPasswordViewController.swift */,
+				77BF963A2B173D0F0008347A /* Controller */,
+				77BF96392B173D050008347A /* View */,
 			);
-			path = ViewController;
+			path = LoginScreen;
 			sourceTree = "<group>";
 		};
-		77B10B762B108CAA00A9AF7F /* View */ = {
+		77BF96392B173D050008347A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				77B10B7A2B108D0A00A9AF7F /* ResetPasswordScreenView.swift */,
+				77BF963B2B174D940008347A /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		77B10B772B108CAF00A9AF7F /* ViewModel */ = {
+		77BF963A2B173D0F0008347A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				77BF96372B173CFE0008347A /* LoginViewController.swift */,
 			);
-			path = ViewModel;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		77BF963F2B1786190008347A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				77BF96402B1786270008347A /* CustomToastView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		77BF96422B17978D0008347A /* RegistrationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				77BF96442B1797AD0008347A /* Controller */,
+				77BF96432B1797A50008347A /* View */,
+			);
+			path = RegistrationScreen;
+			sourceTree = "<group>";
+		};
+		77BF96432B1797A50008347A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77BF96472B1797E90008347A /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77BF96442B1797AD0008347A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				77BF96452B1797CB0008347A /* RegistrationViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,12 +262,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77BF96342B173C850008347A /* MPLUS1p-Bold.ttf in Resources */,
 				776837112B0DE2D90089B4A5 /* LaunchScreen.storyboard in Resources */,
-				776837292B0E059B0089B4A5 /* GothamPro-Bold.ttf in Resources */,
-				7768372A2B0E059B0089B4A5 /* GothamPro-Light.ttf in Resources */,
 				7768370E2B0DE2D90089B4A5 /* Assets.xcassets in Resources */,
-				776837282B0E059B0089B4A5 /* GothamPro.ttf in Resources */,
-				7768372C2B0E059B0089B4A5 /* GothamPro-Medium.ttf in Resources */,
+				77BF96332B173C850008347A /* MPLUS1p-Medium.ttf in Resources */,
+				77BF96352B173C850008347A /* MPLUS1p-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,16 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77B10B792B108CDD00A9AF7F /* ResetPasswordViewController.swift in Sources */,
-				7768372F2B0E14B20089B4A5 /* LoginViewController.swift in Sources */,
-				776837332B0E160F0089B4A5 /* LoginView.swift in Sources */,
+				77BF96412B1786270008347A /* CustomToastView.swift in Sources */,
+				77BF963E2B17778C0008347A /* Extention+TextField.swift in Sources */,
+				77BF96462B1797CB0008347A /* RegistrationViewController.swift in Sources */,
+				77BF96482B1797E90008347A /* RegistrationView.swift in Sources */,
+				77BF96382B173CFE0008347A /* LoginViewController.swift in Sources */,
 				7768371B2B0DE5AA0089B4A5 /* Extention+UIColor.swift in Sources */,
-				776837092B0DE2D80089B4A5 /* SplashScreenCotroller.swift in Sources */,
-				776837202B0DF3640089B4A5 /* SplashView.swift in Sources */,
-				77B10B722B10867C00A9AF7F /* FloatingPlaceholderTextField.swift in Sources */,
 				776837052B0DE2D80089B4A5 /* AppDelegate.swift in Sources */,
+				77BF963C2B174D940008347A /* LoginView.swift in Sources */,
 				776837072B0DE2D80089B4A5 /* SceneDelegate.swift in Sources */,
-				77B10B7B2B108D0A00A9AF7F /* ResetPasswordScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
