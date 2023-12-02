@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		771130872B1B2BF000F9C896 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771130862B1B2BF000F9C896 /* CustomAlert.swift */; };
+		7711308C2B1B322600F9C896 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711308B2B1B322600F9C896 /* MainViewController.swift */; };
+		7711308E2B1B323D00F9C896 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711308D2B1B323D00F9C896 /* MainView.swift */; };
+		771130902B1B353F00F9C896 /* CustomLogOutAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711308F2B1B353F00F9C896 /* CustomLogOutAlert.swift */; };
+		7764B4852B18873E009B656A /* CustomSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7764B4842B18873E009B656A /* CustomSecureTextField.swift */; };
+		7764B4872B18A6CB009B656A /* CustomLoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7764B4862B18A6CB009B656A /* CustomLoginTextField.swift */; };
 		776837052B0DE2D80089B4A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776837042B0DE2D80089B4A5 /* AppDelegate.swift */; };
 		776837072B0DE2D80089B4A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776837062B0DE2D80089B4A5 /* SceneDelegate.swift */; };
 		7768370E2B0DE2D90089B4A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7768370D2B0DE2D90089B4A5 /* Assets.xcassets */; };
 		776837112B0DE2D90089B4A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7768370F2B0DE2D90089B4A5 /* LaunchScreen.storyboard */; };
 		7768371B2B0DE5AA0089B4A5 /* Extention+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768371A2B0DE5AA0089B4A5 /* Extention+UIColor.swift */; };
+		778387F62B19F379005F2AF1 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778387F52B19F379005F2AF1 /* ConfirmationViewController.swift */; };
+		778387FA2B19F414005F2AF1 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778387F92B19F414005F2AF1 /* ConfirmationView.swift */; };
 		77BF96332B173C850008347A /* MPLUS1p-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77BF96302B173C850008347A /* MPLUS1p-Medium.ttf */; };
 		77BF96342B173C850008347A /* MPLUS1p-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77BF96312B173C850008347A /* MPLUS1p-Bold.ttf */; };
 		77BF96352B173C850008347A /* MPLUS1p-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77BF96322B173C850008347A /* MPLUS1p-Regular.ttf */; };
@@ -26,6 +34,12 @@
 
 /* Begin PBXFileReference section */
 		46435044236D7C86A64186AF /* libPods-Neobis_iOS_Auth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Neobis_iOS_Auth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		771130862B1B2BF000F9C896 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		7711308B2B1B322600F9C896 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7711308D2B1B323D00F9C896 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7711308F2B1B353F00F9C896 /* CustomLogOutAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLogOutAlert.swift; sourceTree = "<group>"; };
+		7764B4842B18873E009B656A /* CustomSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureTextField.swift; sourceTree = "<group>"; };
+		7764B4862B18A6CB009B656A /* CustomLoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginTextField.swift; sourceTree = "<group>"; };
 		776837012B0DE2D80089B4A5 /* Neobis_iOS_Auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_Auth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776837042B0DE2D80089B4A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		776837062B0DE2D80089B4A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +47,8 @@
 		776837102B0DE2D90089B4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		776837122B0DE2D90089B4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7768371A2B0DE5AA0089B4A5 /* Extention+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+UIColor.swift"; sourceTree = "<group>"; };
+		778387F52B19F379005F2AF1 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		778387F92B19F414005F2AF1 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		77BF96302B173C850008347A /* MPLUS1p-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-Medium.ttf"; sourceTree = "<group>"; };
 		77BF96312B173C850008347A /* MPLUS1p-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-Bold.ttf"; sourceTree = "<group>"; };
 		77BF96322B173C850008347A /* MPLUS1p-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-Regular.ttf"; sourceTree = "<group>"; };
@@ -73,6 +89,31 @@
 				954F1385BF55199BE239C97B /* Pods-Neobis_iOS_Auth.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		771130882B1B320300F9C896 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7711308A2B1B321500F9C896 /* View */,
+				771130892B1B320E00F9C896 /* Controller */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		771130892B1B320E00F9C896 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7711308B2B1B322600F9C896 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7711308A2B1B321500F9C896 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7711308D2B1B323D00F9C896 /* MainView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		776836F82B0DE2D80089B4A5 = {
@@ -134,13 +175,40 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		778387F42B19F30E005F2AF1 /* PasswordConfirmationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				778387F82B19F38A005F2AF1 /* View */,
+				778387F72B19F37D005F2AF1 /* Controller */,
+			);
+			path = PasswordConfirmationScreen;
+			sourceTree = "<group>";
+		};
+		778387F72B19F37D005F2AF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				778387F52B19F379005F2AF1 /* ConfirmationViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		778387F82B19F38A005F2AF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				778387F92B19F414005F2AF1 /* ConfirmationView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		77B10B742B108C2C00A9AF7F /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				77BF963F2B1786190008347A /* CustomViews */,
+				771130882B1B320300F9C896 /* MainScreen */,
+				778387F42B19F30E005F2AF1 /* PasswordConfirmationScreen */,
 				77BF96422B17978D0008347A /* RegistrationScreen */,
 				77BF96362B173CB90008347A /* LoginScreen */,
 				776837192B0DE5770089B4A5 /* Extention */,
+				77BF963F2B1786190008347A /* CustomViews */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -174,6 +242,10 @@
 			isa = PBXGroup;
 			children = (
 				77BF96402B1786270008347A /* CustomToastView.swift */,
+				7764B4842B18873E009B656A /* CustomSecureTextField.swift */,
+				7764B4862B18A6CB009B656A /* CustomLoginTextField.swift */,
+				771130862B1B2BF000F9C896 /* CustomAlert.swift */,
+				7711308F2B1B353F00F9C896 /* CustomLogOutAlert.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -302,15 +374,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				771130902B1B353F00F9C896 /* CustomLogOutAlert.swift in Sources */,
 				77BF96412B1786270008347A /* CustomToastView.swift in Sources */,
+				778387FA2B19F414005F2AF1 /* ConfirmationView.swift in Sources */,
 				77BF963E2B17778C0008347A /* Extention+TextField.swift in Sources */,
 				77BF96462B1797CB0008347A /* RegistrationViewController.swift in Sources */,
 				77BF96482B1797E90008347A /* RegistrationView.swift in Sources */,
 				77BF96382B173CFE0008347A /* LoginViewController.swift in Sources */,
 				7768371B2B0DE5AA0089B4A5 /* Extention+UIColor.swift in Sources */,
+				778387F62B19F379005F2AF1 /* ConfirmationViewController.swift in Sources */,
+				7764B4852B18873E009B656A /* CustomSecureTextField.swift in Sources */,
+				7711308E2B1B323D00F9C896 /* MainView.swift in Sources */,
+				7711308C2B1B322600F9C896 /* MainViewController.swift in Sources */,
 				776837052B0DE2D80089B4A5 /* AppDelegate.swift in Sources */,
 				77BF963C2B174D940008347A /* LoginView.swift in Sources */,
 				776837072B0DE2D80089B4A5 /* SceneDelegate.swift in Sources */,
+				7764B4872B18A6CB009B656A /* CustomLoginTextField.swift in Sources */,
+				771130872B1B2BF000F9C896 /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

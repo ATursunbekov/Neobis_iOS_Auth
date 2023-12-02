@@ -3,7 +3,6 @@
 //  Neobis_iOS_Auth
 //
 //  Created by Alikhan Tursunbekov on 29/11/23.
-//
 
 import UIKit
 
@@ -21,78 +20,28 @@ class RegistrationView: UIView {
         return label
     }()
     
-    lazy var mailView: UIView = {
-        let view = UIView()
-        view.layer.cornerRadius = 12
-        view.backgroundColor = UIColor(hex: "#F8F8F8")
-        view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor(hex: "#F8F8F8").cgColor
-        return view
-    }()
-    
-    lazy var loginView: UIView = {
-        let view = UIView()
-        view.layer.cornerRadius = 12
-        view.backgroundColor = UIColor(hex: "#F8F8F8")
-        view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor(hex: "#F8F8F8").cgColor
-        return view
-    }()
-    
-    lazy var passwordView1: UIView = {
-        let view = UIView()
-        view.layer.cornerRadius = 12
-        view.backgroundColor = UIColor(hex: "#F8F8F8")
-        view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor(hex: "#F8F8F8").cgColor
-        return view
-    }()
-    
-    lazy var passwordView2: UIView = {
-        let view = UIView()
-        view.layer.cornerRadius = 12
-        view.backgroundColor = UIColor(hex: "#F8F8F8")
-        view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor(hex: "#F8F8F8").cgColor
-        return view
-    }()
-    
-    lazy var mailTextField: UITextField = {
-        let textField = UITextField()
-        textField.defaultTextField(placeholder: "Введи адрес почты")
+    lazy var mailTextField: CustomLoginTextField = {
+        let textField = CustomLoginTextField()
+        textField.textField.defaultTextField(placeholder: "Введи адрес почты")
         return textField
     }()
     
-    lazy var loginTextField: UITextField = {
-        let textField = UITextField()
-        textField.defaultTextField(placeholder: "Придумай логин")
+    lazy var loginTextField: CustomLoginTextField = {
+        let textField = CustomLoginTextField()
+        textField.textField.defaultTextField(placeholder: "Придумай логин")
         return textField
     }()
     
-    lazy var passwordTextfield1: UITextField = {
-        let textField = UITextField()
-        textField.defaultTextField(placeholder: "Создай пароль")
-        textField.isSecureTextEntry = true
+    lazy var firstrPasswordField: CustomSecureTextField = {
+        let textField = CustomSecureTextField()
+        textField.textField.defaultTextField(placeholder: "Создай пароль")
         return textField
     }()
     
-    lazy var passwordTextfield2: UITextField = {
-        let textField = UITextField()
-        textField.defaultTextField(placeholder: "Повтори пароль")
-        textField.isSecureTextEntry = true
+    lazy var secondPasswordField: CustomSecureTextField = {
+        let textField = CustomSecureTextField()
+        textField.textField.defaultTextField(placeholder: "Повтори пароль")
         return textField
-    }()
-    
-    lazy var passwordFieldButton1: UIButton = {
-        let button = UIButton()
-        button.setImage(UIImage(named: "show"), for: .normal)
-        return button
-    }()
-    
-    lazy var passwordFieldButton2: UIButton = {
-        let button = UIButton()
-        button.setImage(UIImage(named: "show"), for: .normal)
-        return button
     }()
     
     lazy var nextButton: UIButton = {
@@ -136,6 +85,14 @@ class RegistrationView: UIView {
         label.textColor = UIColor(hex: "#767676")
         return label
     }()
+    
+    lazy var wrongPasswordLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Пароли не совпадают"
+        label.textColor = .systemRed
+        label.font = UIFont(name: "MPLUS1p-Medium", size: 12)
+        return label
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -145,71 +102,43 @@ class RegistrationView: UIView {
     
     func setupConstraints() {
         addSubview(titleLabel)
-        addSubview(mailView)
-        addSubview(loginView)
-        addSubview(passwordView1)
-        addSubview(passwordView2)
+        addSubview(mailTextField)
+        addSubview(loginTextField)
         addSubview(nextButton)
         addSubview(checkLabel1)
         addSubview(checkLabel2)
         addSubview(checkLabel3)
         addSubview(checkLabel4)
-        mailView.addSubview(mailTextField)
-        loginView.addSubview(loginTextField)
-        passwordView1.addSubview(passwordTextfield1)
-        passwordView1.addSubview(passwordFieldButton1)
-        passwordView2.addSubview(passwordTextfield2)
-        passwordView2.addSubview(passwordFieldButton2)
+        addSubview(firstrPasswordField)
+        addSubview(secondPasswordField)
+        addSubview(wrongPasswordLabel)
         
         titleLabel.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(50)
             make.top.equalToSuperview().offset(140)
         }
         
-        mailView.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview().inset(16)
-            make.top.equalTo(titleLabel.snp.bottom).offset(40)
-            make.height.equalTo(52)
-        }
-        
         mailTextField.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel.snp.bottom).offset(40)
             make.leading.trailing.equalToSuperview().inset(16)
-            make.centerY.equalToSuperview()
-        }
-        
-        loginView.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview().inset(16)
-            make.top.equalTo(mailView.snp.bottom).offset(15)
             make.height.equalTo(52)
         }
         
         loginTextField.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
+            make.top.equalTo(mailTextField.snp.bottom).offset(15)
             make.leading.trailing.equalToSuperview().inset(16)
-        }
-        
-        passwordView1.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview().inset(16)
-            make.top.equalTo(loginView.snp.bottom).offset(15)
             make.height.equalTo(52)
         }
         
-        passwordFieldButton1.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.trailing.equalToSuperview().inset(16)
-            make.height.equalTo(15)
-            make.width.equalTo(21)
-        }
-        
-        passwordTextfield1.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.leading.equalToSuperview().offset(16)
-            make.trailing.equalTo(passwordFieldButton1.snp.leading).offset(-10)
+        firstrPasswordField.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview().inset(16)
+            make.top.equalTo(loginTextField.snp.bottom).offset(15)
+            make.height.equalTo(52)
         }
         
         checkLabel1.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(16)
-            make.top.equalTo(passwordView1.snp.bottom).offset(15)
+            make.top.equalTo(firstrPasswordField.snp.bottom).offset(15)
         }
         
         checkLabel2.snp.makeConstraints { make in
@@ -227,30 +156,24 @@ class RegistrationView: UIView {
             make.top.equalTo(checkLabel3.snp.bottom).offset(14)
         }
         
-        passwordView2.snp.makeConstraints { make in
+        secondPasswordField.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(checkLabel4.snp.bottom).offset(15)
             make.height.equalTo(52)
         }
         
-        passwordFieldButton2.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.trailing.equalToSuperview().inset(16)
-            make.height.equalTo(15)
-            make.width.equalTo(21)
-        }
-        
-        passwordTextfield2.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.leading.equalToSuperview().offset(16)
-            make.trailing.equalTo(passwordFieldButton2.snp.leading).offset(-10)
-        }
-        
         nextButton.snp.makeConstraints { make in
-            make.top.equalTo(passwordView2.snp.bottom).offset(24)
+            make.top.equalTo(secondPasswordField.snp.bottom).offset(24)
             make.leading.trailing.equalToSuperview().inset(16)
             make.height.equalTo(50)
         }
+        
+        wrongPasswordLabel.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview().inset(16)
+            make.top.equalTo(secondPasswordField.snp.bottom).offset(8)
+        }
+        
+        wrongPasswordLabel.isHidden = true
     }
     
     required init?(coder: NSCoder) {

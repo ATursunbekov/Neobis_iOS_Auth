@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                print("\n\(font_name)")
 //            }
 //        })
-        Thread.sleep(forTimeInterval: 3)
+       // Thread.sleep(forTimeInterval: 3)
         
         return true
     }

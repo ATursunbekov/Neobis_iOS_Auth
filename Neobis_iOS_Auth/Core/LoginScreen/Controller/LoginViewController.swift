@@ -18,26 +18,18 @@ class LoginViewController: UIViewController {
     }
 
     func setupTargets() {
-        loginView.showPasswordButton.addTarget(self, action: #selector(showPasswordPressed), for: .touchUpInside)
         loginView.enterButton.addTarget(self, action: #selector(enterPressed), for: .touchUpInside)
         loginView.registerButton.addTarget(self, action: #selector(registerPressed), for: .touchUpInside)
     }
     
-    @objc func showPasswordPressed() {
-        loginView.passwordTextField.isSecureTextEntry.toggle()
-        let check = loginView.passwordTextField.isSecureTextEntry
-        loginView.showPasswordButton.setImage(UIImage(named: check ? "show" : "hide"), for: .normal)
-        loginView.showPasswordButton.snp.updateConstraints { make in
-                make.height.equalTo(check ? 15 : 20)
-            }
-        
-        UIView.animate(withDuration: 0.3) {
-            self.loginView.layoutIfNeeded()
-        }
-    }
-    
     @objc func enterPressed() {
-        self.view.showToast(message: "Неверный логин или пароль")
+        if loginView.loginTextField.textField.text!.isEmpty || loginView.passwordTextField.textField.text!.isEmpty {
+            self.view.showToast(message: "Неверный логин или пароль")
+        } else {
+            let vc = UINavigationController(rootViewController: MainViewController())
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
+        }
     }
     
     @objc func registerPressed() {
