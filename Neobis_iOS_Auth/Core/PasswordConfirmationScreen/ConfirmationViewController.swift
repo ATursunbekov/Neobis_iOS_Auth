@@ -9,13 +9,20 @@ import UIKit
 
 class ConfirmationViewController: UIViewController {
     
-    var userMail: String?
+    var viewModel: ConfirmationViewModelProtocol?
+    var email: String?
+    var username: String?
+    var password: String?
+    
     
     let confirmView = ConfirmationView(frame: UIScreen.main.bounds)
     
-    init(userMail: String) {
+    init(email: String? = nil, username: String? = nil, password: String? = nil, viewModel: ConfirmationViewModelProtocol? = nil) {
         super.init(nibName: nil, bundle: nil)
-        self.userMail = userMail
+        self.email = email
+        self.username = username
+        self.password = password
+        self.viewModel = viewModel
     }
     
     required init?(coder: NSCoder) {
@@ -32,6 +39,7 @@ class ConfirmationViewController: UIViewController {
         navigationItem.leftBarButtonItem = backButton
         setUserMail()
         setupTargets()
+        sendConfirmationRequest()
     }
     
     func setupTargets() {
@@ -39,7 +47,23 @@ class ConfirmationViewController: UIViewController {
     }
     
     func setUserMail() {
-        confirmView.titleLabel.text?.append(userMail ?? "")
+        confirmView.titleLabel.text?.append(email ?? "")
+    }
+    
+    func sendConfirmationRequest() {
+        if let email = email, let username = username, let password = password {
+            viewModel?.sendLink(email: email, username: username, password: password, complition: { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success(let res):
+                        print(res)
+                    case .failure(let error):
+                        self.view.showToast(message: "Неверный логин или пароль")
+                        print(error)
+                    }
+                }
+            })
+        }
     }
     
     @objc func popBack() {
@@ -50,10 +74,6 @@ class ConfirmationViewController: UIViewController {
         let customAlertController = CustomAlertViewController()
         customAlertController.modalPresentationStyle = .overFullScreen
         present(customAlertController, animated: false)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            let vc = UINavigationController(rootViewController: MainViewController(isNewbie: true))
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true)
-        }
+        sendConfirmationRequest()
     }
 }

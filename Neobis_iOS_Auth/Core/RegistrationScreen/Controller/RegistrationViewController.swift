@@ -8,6 +8,18 @@
 import UIKit
 
 class RegistrationViewController: UIViewController {
+    
+    var viewModel: RegisterViewModelProtocol?
+    
+    init(viewModel: RegisterViewModelProtocol?) {
+        super.init(nibName: nil, bundle: nil)
+        self.viewModel = viewModel
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     var checkPassword1 = false
     var checkPassword2 = false
     var checkPassword3 = false
@@ -187,15 +199,26 @@ class RegistrationViewController: UIViewController {
     }
     
     @objc func registerPressed() {
-        if let mail = registerView.mailTextField.textField.text {
-            let vc = UINavigationController(rootViewController: ConfirmationViewController(userMail: mail))
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
+        if let email = registerView.mailTextField.textField.text, let username = registerView.loginTextField.textField.text, let password = registerView.firstrPasswordField.textField.text {
+            viewModel?.registerUser(email: email, username: username, password: password, complition: { [weak self] result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success(let res):
+                        print(res)
+                        let vc = UINavigationController(rootViewController: ConfirmationViewController(email: email, username: username, password: password, viewModel: ConfirmationViewModel()))
+                        vc.modalPresentationStyle = .fullScreen
+                        self?.present(vc, animated: true)
+                    case .failure(let error):
+                        self?.view.showToast(message: "Неверный логин или пароль")
+                        print(error)
+                    }
+                }
+            })
         }
     }
     
     @objc func popBack() {
         dismiss(animated: true)
     }
-
+    
 }

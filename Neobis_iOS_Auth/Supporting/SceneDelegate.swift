@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = UINavigationController(rootViewController: LoginViewController())
+        window?.rootViewController = UINavigationController(rootViewController: LoginViewController(loginViewModel: LoginViewModel()))
         window?.makeKeyAndVisible()
     }
 
@@ -46,7 +46,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
 }
 
+extension SceneDelegate {
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        guard let firstUrl = URLContexts.first?.url else {
+            return
+        }
+
+        let urlString = firstUrl.absoluteString
+        let components = urlString.components(separatedBy: "?")
+        if components.count > 1, let token = components.last {
+            window?.rootViewController = UINavigationController(rootViewController: LoginViewController(loginViewModel: LoginViewModel()))
+            if let navigationController = window?.rootViewController as? UINavigationController {
+                let vc = MainViewController(isNewbie: true, token: token, viewModel: MainViewModel())
+                vc.navigationItem.hidesBackButton = true
+                vc.modalPresentationStyle = .fullScreen
+                navigationController.pushViewController(vc, animated: true)
+            }
+        }
+    }
+}

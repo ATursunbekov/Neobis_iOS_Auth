@@ -10,19 +10,34 @@ import UIKit
 class MainViewController: UIViewController {
     
     var isNewbie: Bool?
+    var token: String?
+    var viewModel: MainViewModelProtocol?
+    let mainView = MainView(frame: UIScreen.main.bounds)
     
-    init(isNewbie: Bool? = false) {
+    init(isNewbie: Bool? = false, token: String? = nil, viewModel: MainViewModelProtocol? = nil) {
         super.init(nibName: nil, bundle: nil)
         self.isNewbie = isNewbie
+        self.token = token
+        self.viewModel = viewModel
     }
-    
-    let mainView = MainView(frame: UIScreen.main.bounds)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(mainView)
         setupTargets()
         checkUser()
+        
+        if let token = token, let isNewbie = isNewbie, isNewbie {
+            viewModel?.confirmUserAccount(token: token, complition: { res in
+                switch res {
+                case .success(let res):
+                    print(res)
+                case .failure(let error):
+                    //self.view.showToast(message: "Не получилось подтвердить")
+                    print(error)
+                }
+            })
+        }
     }
     
     func checkUser() {
@@ -36,7 +51,14 @@ class MainViewController: UIViewController {
     }
     
     @objc func leavePressed() {
-        let customAlertController = UINavigationController(rootViewController: CustomLogOutAlert())
+        let customAlertController = UINavigationController(rootViewController: CustomLogOutAlert(logOut: {
+            if let isNewbie = self.isNewbie, isNewbie {
+                self.dismiss(animated: true, completion: nil)
+                self.navigationController?.popViewController(animated: true)
+            } else {
+                self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+            }
+        }))
         customAlertController.modalPresentationStyle = .overFullScreen
         present(customAlertController, animated: false)
     }
@@ -44,4 +66,6 @@ class MainViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
 }

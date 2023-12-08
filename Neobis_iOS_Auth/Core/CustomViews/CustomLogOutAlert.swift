@@ -3,6 +3,17 @@ import SnapKit
 
 class CustomLogOutAlert: UIViewController {
     
+    var logOut: (()->())?
+    
+    init(logOut: ( () -> Void)? = nil) {
+        super.init(nibName: nil, bundle: nil)
+        self.logOut = logOut
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     lazy var alertView: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 20
@@ -98,6 +109,6 @@ class CustomLogOutAlert: UIViewController {
     }
     
     @objc func leavePressed() {
-        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        logOut?()
     }
 }
