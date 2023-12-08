@@ -1,0 +1,5 @@
+Authorization App README
+
+Project Overview
+
+Welcome to the Authorization App, an iOS UIKit project designed to provide secure user authentication through registration and login functionalities. This application allows users to create an account, confirm their registration via Gmail, and subsequently log in securely.
